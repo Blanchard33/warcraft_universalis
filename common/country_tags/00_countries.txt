@@ -81,6 +81,7 @@ G12 = "countries/Schnottz.txt"
 H08 = "countries/Strahnbrad.txt"
 H09 = "countries/Ambermill.txt"
 E32 = "countries/White Pine.txt" #Trappers/Amberpine
+G39 = "countries/Stromgarde Militia.txt"
 
 # Dwarven
 A28 = "countries/Wildhammer.txt"
@@ -177,6 +178,8 @@ A63 = "countries/Firetree.txt"
 A64 = "countries/Witherbark.txt"
 A65 = "countries/Smolderthorn.txt"
 E55 = "countries/Shadowglen.txt"
+# Forest Troll Formable
+G40 = "countries/Zul'Zeb.txt"
 
 # Jungle Troll
 A66 = "countries/Gurubashi.txt"

@@ -22,18 +22,170 @@ theramore_nation = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					province_id = 1461
-					province_id = 1462
-					province_id = 1463
-					province_id = 1465
-				}
+			area_dustwallow_marsh = {
+				if = {
+				   limit = {
+					     NOT = { owned_by = ROOT }
+					     province_id = 1461
+					     province_id = 1462
+					     province_id = 1463
+					     province_id = 1465
+				    }
 				add_permanent_claim = A23
+			    }
 			}
 			change_government = administrative_kingdom
 			set_capital = 1456
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+lordaeron_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = A08} # Lordaeron
+			primary_culture = culture_lordaeron
+			is_colonial_nation = no
+			lordaeron_superregion = { owned_by = ROOT }
+		}
+		allow = {
+		    owns_core_province = 543 #Undercity/Lordaeron Capital
+			is_at_war = no	
+            num_of_owned_provinces_with = {
+               value = 5
+               area = area_tirisfal_glades
+            }		
+		}
+		effect = {
+			add_prestige = 35
+			change_tag = A08
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			area_tirisfal_glades = {
+				if = {
+				   limit = {
+					     NOT = { owned_by = ROOT }
+					}
+				    add_permanent_claim = A08
+			    }
+				if = {
+				limit = {
+				      owned_by = A08
+				   }
+                change_culture = culture_lordaeron
+				change_religion = ROOT 	
+                }				
+			}
+			change_government = administrative_kingdom
+			set_capital = 543
+			country_event = { id = ideagroups.1 } #Swap Ideas
+			set_country_flag = lordaeron_restoration
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+forest_troll_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = G40 } # Zul'Zeb
+			NOT = { tag = A60 } # Vilebranch
+			culture_group = culture_group_forest_troll
+			is_colonial_nation = no
+			OR = {
+			   capital_scope = { area = area_the_hinterlands }
+			   capital_scope = { area = area_arathi_highlands }
+			}
+		}
+		allow = {
+		    OR = {
+			   AND = {
+		           owns_core_province = 2999 #Upper Jintha'Alor
+				   num_of_owned_provinces_with = {
+                      value = 5
+                      area = area_the_hinterlands
+                   }
+			   }
+			   AND = {
+		           owns_core_province = 3002 #Stromgarde Keep
+				   num_of_owned_provinces_with = {
+                      value = 5
+                      area = area_arathi_highlands
+                   }
+			   }
+			}
+			is_at_war = no		
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = G40
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			area_the_hinterlands = {
+				if = {
+				   limit = {
+					     NOT = { owned_by = ROOT }
+						 culture_group = culture_group_forest_troll
+					}
+				    add_permanent_claim = G40
+			    }
+				if = {
+				limit = {
+				      owned_by = G40
+					  NOT = { culture_group = culture_group_forest_troll }
+				   }
+                change_culture = ROOT
+				change_religion = ROOT 	
+                }				
+			}
+			area_arathi_highlands = {
+				if = {
+				   limit = {
+					     NOT = { owned_by = ROOT }
+						 culture_group = culture_group_forest_troll
+					}
+				    add_permanent_claim = G40
+			    }
+				if = {
+				limit = {
+				      owned_by = G40
+					  NOT = { culture_group = culture_group_forest_troll }
+				   }
+                change_culture = ROOT
+				change_religion = ROOT 	
+                }				
+			}
+			change_government = militaristic_kingdom
+			if = {
+			   limit = { capital_scope = { area = area_the_hinterlands }
+			   }
+			set_capital = 2999
+			}
+			if = {
+			   limit = { capital_scope = { area = area_arathi_highlands }
+			   }
+			set_capital = 3002
+			}
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		ai_will_do = {

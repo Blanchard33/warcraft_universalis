@@ -162,7 +162,7 @@ diety_gurok =
 	
 	allow = { 
 	      religion = religion_earth 
-	      capital_scope = outland_region
+	      capital_scope = area_nagrand
 	}
 	sprite = 6
 	

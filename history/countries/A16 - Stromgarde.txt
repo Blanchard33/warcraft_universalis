@@ -64,3 +64,24 @@ monarch = {
  	} 
  	government = regency_gov
  }
+
+632.1.1 = { 
+	monarch = { 
+		name = "Galen" 
+		dynasty = "Trollbane" 
+		adm = 2
+		dip = 3
+		mil = 2 
+ 	} 
+	capital = 3002
+add_country_modifier = {
+    name = horde_member
+    duration = 2
+}
+primary_culture = culture_forsaken
+religion = religion_forgotten_shadow
+}
+
+634.1.1 = { 
+remove_country_modifier = horde_member
+}

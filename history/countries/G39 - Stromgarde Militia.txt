@@ -1,0 +1,20 @@
+# Stromgarde
+government 			= dictatorship_gov
+mercantilism 		= 0.1
+technology_group 	= tech_human
+religion			= religion_church_of_the_light
+primary_culture 	= culture_arathi
+capital 			= 3002
+ 
+632.1.1 = { 
+monarch = { 
+     name = "" 
+     dynasty = "Nials" 
+		adm = 3
+		dip = 3
+		mil = 3 
+		female = yes
+		
+ 	} 	
+capital = 673
+ }

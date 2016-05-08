@@ -1,0 +1,37 @@
+# Revantusk
+government 			= militaristic_kingdom
+mercantilism 		= 0.1
+technology_group 	= tech_troll
+religion			= religion_loa
+secondary_religion = religion_voodoo
+primary_culture 	= culture_revantusk
+add_accepted_culture = culture_witherbark
+add_accpeted_culture = culture_vilebranch
+
+capital 			= 3002 #Stromgarde Keep
+ 
+# Legion
+634.1.1 = {  
+monarch = {  
+      name = "Torntusk"  
+     dynasty = "Revantusk"  
+ 		adm = 4 
+		dip = 5 
+		mil = 3 
+  	}
+heir = {  
+      name = "Torntusk"  
+     dynasty = "Revantusk"  
+ 		adm = 2 
+		dip = 3 
+		mil = 5  
+		female = yes 
+  	}  
+add_country_modifier = {
+    name = horde_member
+    duration = -1
+}
+historical_friend = A48 
+historical_rival = A16 
+historical_rival = A29
+}  

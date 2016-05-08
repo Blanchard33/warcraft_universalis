@@ -396,6 +396,8 @@ religion_group_the_void = {
 			enemy_core_creation = 1.0
 		}
 		
+		personal_deity = yes 
+		
 		on_convert = {
 			change_religion = religion_old_gods
 			add_prestige = -100
@@ -610,6 +612,7 @@ religion_group_elemental = {
 		}
 		
 		has_patriarchs = yes
+		personal_deity = yes 
 		
 		on_convert = {
 			change_religion = religion_fire
@@ -639,6 +642,7 @@ religion_group_elemental = {
 		}
 		
 		has_patriarchs = yes
+		personal_deity = yes 
 		
 		on_convert = {
 			change_religion = religion_earth
@@ -668,6 +672,7 @@ religion_group_elemental = {
 		}
 		
 		has_patriarchs = yes
+		personal_deity = yes 
 		
 		on_convert = {
 			change_religion = religion_air
@@ -697,6 +702,7 @@ religion_group_elemental = {
 		}
 
 		has_patriarchs = yes
+		personal_deity = yes 
 		
 		on_convert = {
 			change_religion = religion_water
@@ -802,6 +808,8 @@ religion_group_order = {
 		
 		}
 		
+		personal_deity = yes
+		
 		on_convert = {
 			change_religion = religion_titan
 			add_prestige = -100
@@ -850,8 +858,6 @@ religion_group_order = {
 			ae_impact = -0.05
 		}
 
-		personal_deity = yes
-		
 		on_convert = {
 			change_religion = religion_elune
 			add_prestige = -100
@@ -939,7 +945,7 @@ religion_group_nature = {
 			diplomatic_reputation = 1
 		}
 		
-		personal_deity = yes
+		personal_deity = yes #Ancients
 		
 		on_convert = {
 			change_religion = religion_druidic
@@ -965,7 +971,7 @@ religion_group_nature = {
 			land_maintenance_modifier = -0.05
 		}
 		
-		personal_deity = yes
+		personal_deity = yes 
 		
 		province = {
 			local_missionary_strength = -0.01
@@ -1019,7 +1025,7 @@ religion_group_nature = {
 			accepted_culture_threshold = -0.1
 		}
 
-		personal_deity = yes
+		personal_deity = yes 
 		
 		on_convert = {
 			change_religion = religion_celestial
@@ -1045,8 +1051,6 @@ religion_group_nature = {
 			global_missionary_strength = 0.01
 		}
 
-		personal_deity = no
-		
 		on_convert = {
 			change_religion = religion_zangar
 			add_prestige = -100
@@ -1073,7 +1077,7 @@ religion_group_nature = {
 			war_exhaustion_cost = -0.1
 		}
 		
-		uses_piety = yes
+		personal_deity = yes
 		misguided_heretic = yes
 		
 		on_convert = {

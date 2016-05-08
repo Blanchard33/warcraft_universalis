@@ -17,11 +17,29 @@ capital 			= 935
 		female = yes
 		birth_date = 599.12.11
  	}
-capital 			= 539 
+capital 			= 539
+heir = { 
+     name = "" 
+     dynasty = "Landgren" 
+		adm = 4
+		dip = 3
+		mil = 3
+       }
+} 
 } 
 
 626.1.1 = {
 capital = 935
 secondary_religion = religion_shadow
 }
+
+633.1.1 = {
+	monarch = { 
+		name = "" 
+		dynasty = "Daion" 
+		adm = 3
+		dip = 3
+		mil = 4
+		female = yes
+ 	}
 

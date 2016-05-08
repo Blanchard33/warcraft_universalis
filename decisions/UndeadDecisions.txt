@@ -1,0 +1,42 @@
+country_decisions = {
+
+raise_dead = {
+		major = yes
+		potential = {
+                  OR = {
+		             religion = religion_the_damned
+					 religion = religion_shadow
+					 religion = religion_void
+					 AND = {
+					     primary_religion = fel
+						 OR = {
+					        culture_group = culture_group_undead
+							culture = culture_eredar
+							culture = culture_dreadlord
+					        secondary_religion = shadow
+					        secondary_religion = void
+					     }
+		             }
+				  }
+				  any_owned_province = {
+				     OR = {
+				        AND = {
+						    NOT = { religion = ROOT }
+						    NOT = { secondary_religion = ROOT }
+						    NOT = { culture_group = ROOT }
+				        }
+				     }
+				  }
+		}
+		allow = {
+			is_at_war = no		
+		}
+		effect = {
+			every_owned_province = {  				
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
